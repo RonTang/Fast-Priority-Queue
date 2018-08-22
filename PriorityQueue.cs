@@ -86,7 +86,7 @@ public class PriorityQueue<T> where T : IComparable<T>
         numberOfItems++;
     }
 
-    void DecreaseKey(T node, ushort index)
+    private void DecreaseKey(T node, ushort index)
     {
 
         if (index < numberOfItems)
@@ -121,7 +121,7 @@ public class PriorityQueue<T> where T : IComparable<T>
         heap[bubbleIndex] = node;
     }
 
-    public T ExtractMin()
+    private T ExtractMin()
     {
         T returnItem = heap[0];
 
